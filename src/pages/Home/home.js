@@ -32,8 +32,8 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <main className='  pt-8 '>
-        <div className='flex gap-3 justify-center mb-3'>
+      <main className=' sm:px-4 lg:px-8  pt-8 '>
+        <div className='flex flex-wrap  gap-3 justify-center mb-3 sm:gap-3 lg:gap-4'>
           {categories?.length > 0 &&
             categories.map(category => (
               <div
@@ -44,7 +44,11 @@ export const Home = () => {
               </div>
             ))}
         </div>
-        <div className='flex  flex-wrap gap-8 justify-center pt-8 '>
+        <div className='flex  flex-wrap gap-3 justify-center pt-8 grid gap-4
+    grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-4
+    place-items-center'>
           {filteredByCategories?.length > 0 ? (
             filteredByCategories.map(product => (
               <Productcard key={product.id} product={product} />

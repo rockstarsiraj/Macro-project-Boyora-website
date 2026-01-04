@@ -34,13 +34,14 @@ export const Productcard = ({ product }) => {
   };
   return (
     <div
-      className="card card-vertical d-flex direction-column relative shadow bg-[conic-gradient(at_left,_var(--tw-gradient-stops))]
+      className="
+   card card-vertical d-flex direction-column relative shadow bg-[conic-gradient(at_left,_var(--tw-gradient-stops))]
 
 from-[#f4f5db]
 via-[#d9dab0]
 to-[#487e95]"
     >
-      <div className="card-image-container">
+      <div className="card-image-container ">
         <img
           className="card-image object-cover w-full h-80"
           src={product.images[0]}
