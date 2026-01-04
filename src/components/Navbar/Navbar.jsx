@@ -20,11 +20,10 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="flex  items-center  w-full bg-green-900 py-4 px-8 text-slate-50 sm:px-6 sm:py-3
-  lg:px-8 lg:py-4">
+    <header className="flex  items-center  w-full bg-green-900 py-4 px-8 text-slate-50 ">
       <div className="flex items-center gap-2" >
-        <img src="/images/shop2.png" alt="shop" className="h-14 w-14 object-contain bg-transparent sm:h-12 sm:w-12
-        lg:h-14 lg:w-14"/>
+        <img src="/images/shop2.png" alt="shop" className="h-14 w-14 object-contain bg-transparent 
+        "/>
        
         <h1
           onClick={() => navigate("/")}
@@ -34,8 +33,7 @@ export const Navbar = () => {
           Buyora
         </h1>
       </div>
-      <nav className=" ml-auto flex  gap-8  text-white sm:gap-6
-    lg:gap-8">
+      <nav className=" ml-auto flex  gap-8  text-white ">
         <div className="icon-badge relative  ">
           <span
             onClick={() => navigate("/wish")}
